@@ -14,7 +14,7 @@ reports to e.g. SonarQube Scanner for further processing.
 Use [Composer](https://getcomposer.org/) to install the testing framework.
 
 ```bash
-$ composer require --dev nimut/phpunit-merger
+$ composer require --dev melhorenvio/phpunit-merger
 ```
 
 Composer will add the package as a dev requirement to your composer.json and install the package with its dependencies.

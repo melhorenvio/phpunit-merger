@@ -1,5 +1,5 @@
 {
-    "name": "nimut/phpunit-merger",
+    "name": "melhorenvio/phpunit-merger",
     "description": "Merge multiple PHPUnit reports into one file",
     "keywords": [
         "PHPUnit",
@@ -36,7 +36,11 @@
     },
     "require-dev": {
         "phpunit/phpunit": ">=6.0 <10.0",
-        "symfony/filesystem": ">=2.7 <6.0"
+        "symfony/filesystem": "*",
+        "phpspec/prophecy-phpunit": "*"
+    },
+    "scripts": {
+        "test": "XDEBUG_MODE=coverage .Build/bin/phpunit"
     },
     "suggest": {
         "friendsofphp/php-cs-fixer": "Tool to automatically fix PHP coding standards issues"

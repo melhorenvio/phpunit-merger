@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+
+  php:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    command: ["tail", "-f", "/dev/null"]
+    restart: unless-stopped
+    volumes:
+      - ./:/var/www
+      - ~/.ssh/id_rsa:/home/development/.ssh/id_rsa
